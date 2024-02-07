@@ -1,10 +1,10 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import SplashScreen from './components/SplashScreen';
-import HymnContainer from './components/HymnContainer';
-import Search from './components/Search';
-import Home from './components/Home';
-import NotFound from './components/NotFound';
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import SplashScreen from "./components/SplashScreen";
+import HymnContainer from "./components/HymnContainer";
+import Search from "./components/Search";
+import Home from "./components/Home";
+import NotFound from "./components/NotFound";
 
 const App = () => {
   return (
