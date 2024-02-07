@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/HymnalFE/static/css/main.e6c13ad2.css",
-    "main.js": "/HymnalFE/static/js/main.23c03686.js",
-    "static/js/592.dcaaa873.chunk.js": "/HymnalFE/static/js/592.dcaaa873.chunk.js",
-    "index.html": "/HymnalFE/index.html",
-    "main.e6c13ad2.css.map": "/HymnalFE/static/css/main.e6c13ad2.css.map",
-    "main.23c03686.js.map": "/HymnalFE/static/js/main.23c03686.js.map",
-    "592.dcaaa873.chunk.js.map": "/HymnalFE/static/js/592.dcaaa873.chunk.js.map"
+    "main.css": "/static/css/main.e6c13ad2.css",
+    "main.js": "/static/js/main.670e7950.js",
+    "static/js/592.dcaaa873.chunk.js": "/static/js/592.dcaaa873.chunk.js",
+    "index.html": "/index.html",
+    "main.e6c13ad2.css.map": "/static/css/main.e6c13ad2.css.map",
+    "main.670e7950.js.map": "/static/js/main.670e7950.js.map",
+    "592.dcaaa873.chunk.js.map": "/static/js/592.dcaaa873.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.23c03686.js"
+    "static/js/main.670e7950.js"
   ]
 }
