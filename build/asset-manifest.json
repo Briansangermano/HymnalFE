@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/HymnalFE/build/static/css/main.e6c13ad2.css",
+    "main.js": "/HymnalFE/build/static/js/main.c2559bf2.js",
+    "static/js/592.dcaaa873.chunk.js": "/HymnalFE/build/static/js/592.dcaaa873.chunk.js",
+    "index.html": "/HymnalFE/build/index.html",
+    "main.e6c13ad2.css.map": "/HymnalFE/build/static/css/main.e6c13ad2.css.map",
+    "main.c2559bf2.js.map": "/HymnalFE/build/static/js/main.c2559bf2.js.map",
+    "592.dcaaa873.chunk.js.map": "/HymnalFE/build/static/js/592.dcaaa873.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.c2559bf2.js"
+  ]
+}
