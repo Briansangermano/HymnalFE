@@ -85,11 +85,11 @@ const Search = () => {
   return (
     <ThemeProvider theme={theme}>
       <Box
-        p={3}
+        p={7}
         pt={15}
-        minHeight="80vh"
         display="flex"
         flexDirection="column"
+        sx={{ background: '#4447ff'}}
         justifyContent="center"
       >
          <Button
@@ -132,7 +132,7 @@ const Search = () => {
             </Grid>
           ))}
         </Grid>
-        <Box sx={{ display: 'flex', justifyContent: 'space-evenly'}}>
+        <Box sx={{ display: 'flex', justifyContent: 'space-between'}}>
           <Button
             variant="contained"
             color="secondary"
