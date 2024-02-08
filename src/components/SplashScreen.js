@@ -1,19 +1,36 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { Grid, Box } from "@mui/material";
+import axios from "axios";
 
 const SplashScreen = () => {
   const [loading, setLoading] = useState(true);
   const navigate = useNavigate();
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setLoading(false);
-      navigate("/home");
-    }, 2000);
+    axios
+      .get(`https://hymnal-app-be-node.onrender.com/himnos`)
+      .then(() => {
+        const timer = setTimeout(() => {
+          setLoading(false);
+          navigate("/home");
+        }, 2000);
 
-    return () => clearTimeout(timer);
+        return () => clearTimeout(timer);
+      })
+      .catch((error) => {
+        console.error("Error fetching himno:", error);
+      });
   }, [navigate]);
+
+  // useEffect(() => {
+  //   const timer = setTimeout(() => {
+  //     setLoading(false);
+  //     navigate("/home");
+  //   }, 2000);
+
+  //   return () => clearTimeout(timer);
+  // }, [navigate]);
 
   return (
     <Grid container alignItems="center" justifyContent="center">

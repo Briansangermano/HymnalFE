@@ -53,27 +53,26 @@ const Home = () => {
             Buscador
           </Button>
         </Link>
-        {/* <Link to={'/primeras-letras'}> */}
-        <Button
-          disabled="false"
-          variant="outlined"
-          color="primary"
-          fullWidth
-          size="large"
-          startIcon={<SortByAlphaIcon />}
-          style={{
-            margin: "20px 0 20px",
-            borderRadius: "13px",
-            height: "60px",
-            fontSize: "20px",
-            border: "solid",
-            fontWeight: "bold",
-          }}
-        >
-          Primeras letras
-        </Button>
-        {/* </Link> */}
-        {/* <Link to={'/acordes'}> */}
+        <Link to={"/firstLetters"}>
+          <Button
+            variant="outlined"
+            color="primary"
+            fullWidth
+            size="large"
+            startIcon={<SortByAlphaIcon />}
+            style={{
+              margin: "20px 0 20px",
+              borderRadius: "13px",
+              height: "60px",
+              fontSize: "20px",
+              border: "solid",
+              fontWeight: "bold",
+            }}
+          >
+            Primeras letras
+          </Button>
+        </Link>
+        {/* <Link to={"/acordes"}> */}
         <Button
           disabled="false"
           variant="outlined"
