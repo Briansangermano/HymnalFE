@@ -87,8 +87,9 @@ const Search = () => {
   return (
     <ThemeProvider theme={theme}>
       <Box
-        p={7}
-        pt={15}
+        pr={7}
+        pl={7}
+        pt={10}
         display="flex"
         flexDirection="column"
         sx={{ background: "#4447ff" }}

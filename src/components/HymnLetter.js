@@ -15,7 +15,7 @@ const HymnLetter = ({ himno }) => {
           >
             {himno.titulo}
           </Typography>
-          <Typography variant="subtitle1">
+          <Typography variant="subtitle1" className="himno-content">
             <ul>
               {himno.estrofas.map((estrofa, index) => {
                 const palabras = estrofa.split(" ");

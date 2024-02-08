@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { useNavigate, useParams } from "react-router-dom";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
+import ContentCopyIcon from "@mui/icons-material/ContentCopy";
 import HymnLetter from "./HymnLetter";
 import {
   Typography,
@@ -45,6 +46,23 @@ const HymnContainer = () => {
     },
   };
 
+  const copiarAlPortapapeles = () => {
+    const content = document.querySelector(".himno-content")?.innerText;
+
+    console.log("PASO", content);
+
+    navigator.clipboard
+      .writeText(content)
+      .then(() => {
+        console.log("Contenido copiado al portapapeles:", content);
+        // Puedes mostrar un mensaje de éxito aquí si lo deseas
+      })
+      .catch((error) => {
+        console.error("Error al copiar el contenido al portapapeles:", error);
+        // Puedes mostrar un mensaje de error aquí si lo deseas
+      });
+  };
+
   return (
     <ThemeProvider theme={theme}>
       {himno ? (
@@ -72,6 +90,19 @@ const HymnContainer = () => {
             onClick={goBack}
           >
             Back
+          </Button>
+          <Button
+            endIcon={<ContentCopyIcon />}
+            style={{
+              position: "absolute",
+              top: "15px",
+              right: "10px",
+              zIndex: "1000",
+              border: "0",
+            }}
+            onClick={copiarAlPortapapeles}
+          >
+            Copy
           </Button>
           <HymnLetter himno={himno} />
         </Box>
