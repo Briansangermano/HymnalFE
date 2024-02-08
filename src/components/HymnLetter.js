@@ -24,7 +24,12 @@ const HymnLetter = ({ himno }) => {
                 );
                 palabras.splice(indexCoro, 1);
                 return indexCoro !== -1 ? (
-                  <Typography key={index} variant="body1" component="pre">
+                  <Typography
+                    sx={{ margin: "10px" }}
+                    key={index}
+                    variant="body1"
+                    component="pre"
+                  >
                     {palabras
                       .join(" ")
                       .split("\n")
@@ -42,6 +47,7 @@ const HymnLetter = ({ himno }) => {
                       key={index}
                       variant="body1"
                       component="pre"
+                      sx={{ margin: "10px" }}
                       style={{ marginLeft: "10px", marginTop: "3px" }}
                     >
                       {estrofa.split("\n").map((line, i) => (
